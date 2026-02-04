@@ -1,6 +1,6 @@
 # DODO
 
-Dodo AI is a simple, personal voice assistant built with Python. It listens to your voice commands, processes them intelligently, and responds with useful information and actions.
+Dodo is a simple, personal voice assistant built with Python. It listens to your voice commands, processes them intelligently, and responds with useful information and actions.
 
 ## Features
 
