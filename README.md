@@ -52,7 +52,7 @@ Or download the repository as a ZIP file and extract it to your desired location
 pip install -r requirements.txt
 ```
 
-## 3. Run the Script
+### 3. Run the Script
 
 ```bash
 python main.py
