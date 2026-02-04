@@ -1,1 +1,1 @@
-name, phone number of the person
+name, whatsapp number of the person

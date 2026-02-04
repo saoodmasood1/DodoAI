@@ -84,7 +84,7 @@ Dodo AI will:
 
 Try saying a few of the following commands.
 
-- "Tell me something about Oxford?" or "What is a Machine?" 
+- "Tell me something about the University of Oxford?" or "What is Metaphysics?" 
 - "What is the weather in Lahore?" 
 - "send a message to [contact name] saying that [your message]" 
 - "Play the song [song name] of [singer name] on YouTube" or "Play the song Tu Jane Na of Atif Aslam on Youtube" 
@@ -95,6 +95,8 @@ Try saying a few of the following commands.
 - "Open instagram/google/facebook/whatsapp."
 - "What is 10 + 40 - 30?" or "What is 39098 / 45?"
 - "What time is it?"
+- "Play Aljazeera News"
+- "Play the movie Veer"
 - "Tell me a joke"
 - "Tell me a story"
 - "Say some poetry?"
@@ -138,6 +140,4 @@ This project is open source and available for personal use.
 
 Created as a personal AI assistant project.
 
----
 
-**Note**: This bot requires a microphone and internet connection for full functionality.

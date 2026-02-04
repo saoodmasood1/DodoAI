@@ -116,7 +116,7 @@ def run_dodo():
 #-------------------------------------------|
 
     try:
-     search_variations1 = ['what is a', 'what is the', 'who is', 'who is the', 'give info about', 'tell me something', 'how do', 'what do you know', 'what you know',
+     search_variations1 = ['what is', 'what is the', 'who is', 'who is the', 'give info about', 'tell me something', 'how do', 'what do you know', 'what you know',
                           'can you tell me', 'could you tell me', 'can you please tell me about', 'could you please tell me about',
                           'who was', 'what happened',  'what are the','what were the', 'tell me about', 'tell me more about', 'how do', 'describe', 'description of'
                            'why did the', 'give me details about', 'what happened to', 'can you explain', 'could you explain', 'can you please explain',
@@ -238,8 +238,8 @@ def run_dodo():
      for variation in open_app_variations:
         if variation in command:
             search = command.replace(variation, '').strip()
-            search2 = "https://"+search
-            talk(f"Opening: {search2}")
+            search2 = search+".com"
+            talk(f"Opening: {search}")
             pywhatkit.search(search2)
             break
     except:
@@ -1392,10 +1392,10 @@ def run_dodo():
                 # Open a file
                 subprocess.run(['open', target_path], check=True)  # Works on macOS and Linux
                 talk(f"I am opening the file {item_name}, sir.")
-         else:
-            talk(f"Sorry, I couldn't find {item_name}. Please check the name and try again.")
-        except Exception as e:
-         talk(f"An error occurred: {str(e)}")
+
+        except Exception as e: 
+         talk(f"Sorry, I couldn't find {item_name}. Please check the name and try again.")
+         print(f"An error occurred: {str(e)}")
 
 
 
@@ -1519,8 +1519,7 @@ def run_dodo():
         talk(f"The square root of {numbers[0]} is: {result}.")
 
     except Exception as e:
-        talk("Sorry, I couldn't understand your problem. Please rephrase.")
-        print(f"Error: {e}")
+        pass
 
 
 
@@ -1534,7 +1533,7 @@ def run_dodo():
 
 #Playing of Song:
     try:
-     play_song_variations = ['play song of', 'play music of', 'play a song of','play a song', 'play the song', 'play a music of','play the music', 'play the music of', 'play the song of', 'play song', 'play music', 'play some song', 'play some music']
+     play_song_variations = ['play song of', 'play music', 'play a song', 'play the song', 'play a music of','play the music', 'play song', 'play some song', 'play some music']
      for variation in play_song_variations:
         if variation in command:
             song = command.replace(variation, '')
@@ -1545,7 +1544,7 @@ def run_dodo():
        talk("To play a music first please say, 'Play a song of', then add your favorite singer or artist name or even the song name itself.")
 
     try:
-     play_movie_variations = ['play movie of', 'play the movie of', 'play a movie of','play a movie', 'play a film', 'play a film of', 'play the movie',
+     play_movie_variations = ['play movie of', 'play the movie', 'play a movie of','play a movie', 'play a film', 'play a film of', 'play the movie',
                               'play the film', 'play the film of', 'play movie', 'play film', 'play some movie', 'play some film']
      for variation in play_movie_variations:
         if variation in command:
